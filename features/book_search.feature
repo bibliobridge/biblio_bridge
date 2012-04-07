@@ -4,6 +4,6 @@ Feature: Book search
 	I want to find a book to borrow
 
 	Scenario: Search by exact title
-		Given a book in the library
+		Given a book is in the library
 		When I search for the book's title
 		Then I should see the book
