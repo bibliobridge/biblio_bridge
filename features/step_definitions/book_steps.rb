@@ -3,6 +3,6 @@ Given /^a book is in the library$/ do
 end
 
 Then /^I should see the book$/ do
-  pending
+  page.should have_content @book.title
 end
 
