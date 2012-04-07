@@ -3993,6 +3993,14 @@ h1.title {
 	float: left;
 }
 
+.container.2 {
+ width: auto;
+}
+
+.hero-unit.top {
+ margin: 0px;
+}
+
 ol.menu {
 	padding: 0px 0px 0px 0px;
 	list-style-type: none;

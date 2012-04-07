@@ -1,8 +1,13 @@
 
 
-<div class="container-fluid">
- <div class="hero-unit">
-  <p>Hello Search!</p>
+<div class="container">
+ <div class="hero-unit top">
+	 
+	 <%= form_tag("/search", :method => "get") do %>
+		 <%= label_tag(:q, "search for:") %>
+		 <%= text_field_tag(:q) %>
+		 <%= submit_tag("search") %>
+	 <% end %>
 
   </div>
 </div>
