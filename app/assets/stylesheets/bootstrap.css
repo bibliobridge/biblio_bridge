@@ -3988,3 +3988,16 @@ a.thumbnail:hover {
 .invisible {
   visibility: hidden;
 }
+
+h1.title {
+	float: left;
+}
+
+ol.menu {
+	padding: 0px 0px 0px 0px;
+	list-style-type: none;
+}
+
+ol.li.menu {
+	background: white;
+}
