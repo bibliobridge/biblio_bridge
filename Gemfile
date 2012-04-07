@@ -12,6 +12,9 @@ gem 'bson_ext'
 
 gem 'bootstrap_forms'
 
+gem 'faraday'
+gem 'yajl-ruby'
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
