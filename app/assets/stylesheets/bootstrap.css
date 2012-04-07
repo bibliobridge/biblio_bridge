@@ -3999,6 +3999,24 @@ h1.title {
 
 .hero-unit.top {
  margin: 0px;
+ padding-bottom: 0px;
+ margin-bottom: 0px;
+}
+
+.hero-unit.top2 {
+ padding: 0px;
+ margin: 0px;
+ padding-bottom: 0px;
+ margin-bottom: 0px;
+}
+
+
+.hero-unit.top3 {
+	padding: 0px;
+ margin: 0px;
+ padding-bottom: 0px;
+ margin-bottom: 0px;
+background-color: white;
 }
 
 ol.menu {
@@ -4008,4 +4026,17 @@ ol.menu {
 
 ol.li.menu {
 	background: white;
+}
+
+.container.fluid.2 {
+ padding-left: 0px;
+}
+
+.hero-unit.middle {
+	background-color: white;
+}
+
+h1.tag {
+	text-align: center;
+	padding-bottom: 10px;
 }
