@@ -5,7 +5,6 @@ gem 'rails', '3.2.3'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'mustache'
 gem 'mongo_mapper'
 gem 'devise-mongo_mapper'
 gem 'omniauth-facebook'
@@ -31,7 +30,4 @@ group :test do
   gem 'database_cleaner'
 end
 
-group :development do
-  gem 'rails3-generators'
-end
 
