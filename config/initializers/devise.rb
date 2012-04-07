@@ -9,7 +9,7 @@ Devise.setup do |config|
   # Configure the class responsible to send e-mails.
   # config.mailer = "Devise::Mailer"
 
-  config.omniauth :facebook, "", ""
+  config.omniauth :facebook, ENV['FACEBOOK_APP_ID'], ENV['FACEBOOK_APP_SECRET']
 
 
   # Automatically apply schema changes in tableless databases
