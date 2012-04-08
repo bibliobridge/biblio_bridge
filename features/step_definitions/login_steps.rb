@@ -20,12 +20,20 @@ Given /^I have logged in before$/ do
   @user = User.find_or_create_from_facebook FACEBOOK_AUTH_HASH
 end
 
+@omniauth
+Given /^I am logged in$/ do
+  step %q(I have logged in before)
+  step %q(I log in with Facebook)
+end
+
+
+
 Given /^my mobile number is set$/ do
   @user.mobile_number = "4085559595"
   @user.save!
 end
 
 Then /^I should be taken to the homepage$/ do
-  page.should have_content "Save your money for Keggers"
+  page.should have_content "Save Your money for Keggers"
 end
 
