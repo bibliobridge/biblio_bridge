@@ -3995,6 +3995,9 @@ h1.title {
  margin: 0px;
  padding-bottom: 0px;
  margin-bottom: 0px;
+	border-radius: 0px;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
 }
 
 .hero-unit.top2 {
@@ -4028,6 +4031,10 @@ ol.li.menu {
 
 .hero-unit.middle {
 	background-color: white;
+	border-radius: 0px;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	margin-bottom: 0px;
 }
 
 h1.tag {
@@ -4040,4 +4047,31 @@ li.topnav {
 	margin-left: 500px;
 	padding-top: 20px;
 }
+
+body {
+	background: gray;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

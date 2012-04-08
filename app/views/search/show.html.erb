@@ -12,6 +12,7 @@
 <div class="hero-unit middle">
    <div class="container">
      <div class="hero-unit top3">
+			 <a id="fb-connect" href="/oauth_fb" class="login-btn"></a>
        <%= form_tag(books_path, method: "get") do %>
            <%= label_tag(:title, "Book Search:") %>
            <%= text_field_tag(:title) %>
