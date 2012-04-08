@@ -4072,7 +4072,23 @@ input#title {
 }
 
 input.search {
-	padding: 15px 100px 15px 100px;
+	padding: 15px 50px 15px 50px;
+	background-color: rgb(63,132,242);
+	color: white;
+	font-size: 20px;
+	border: 1px solid rgb(47,91,183);
+}
+
+input.search:hover {
+}
+
+.search {
+	text-align: center;
+}
+
+label.searchtitle {
+	font-size: 40px;
+	padding-bottom: 25px;
 }
 
 

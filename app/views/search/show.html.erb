@@ -12,12 +12,15 @@
 <div class="hero-unit middle">
    <div class="container">
      <div class="hero-unit top3">
-			 <a id="fb-connect" href="/oauth_fb" class="login-btn"></a>
-       <%= form_tag(books_path, method: "get") do %>
-           <%= label_tag(:title, "Book Search:") %>
+
+			 <div class="search">
+        <%= form_tag(books_path, method: "get") do %>
+           <%= label_tag :title, "Search for your book", :class => 'searchtitle' %>
            <%= text_field_tag(:title) %>
-           <%= submit_tag"search", :class => 'search' %>
+           <%= submit_tag "search", :class => 'search' %>
          <% end %>
+			 </div>
+
      </div>
    </div>
 </div>
