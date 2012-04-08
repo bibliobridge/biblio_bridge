@@ -13,6 +13,7 @@ class User
   field :facebook_info, type: Hash
 
   field :mobile_number, type: String
+  field :sendhub_contact_id, type: String
 
   ## Trackable
   field :sign_in_count, type: Integer, default: 0
