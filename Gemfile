@@ -30,9 +30,9 @@ end
 gem 'jquery-rails'
 
 group :test do
-  gem 'cucumber-rails'
   gem 'rspec-rails'
   gem 'database_cleaner'
+  gem 'cucumber-rails', require: false
 end
 
 group :development do
