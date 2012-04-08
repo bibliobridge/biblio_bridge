@@ -9,3 +9,4 @@ class OffersController < ApplicationController
   def destroy
   end
 end
+

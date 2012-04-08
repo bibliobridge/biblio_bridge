@@ -11,7 +11,7 @@ Heorot::Application.routes.draw do
   resources :books
   resources :users, only: [:edit, :update] do
     resources :offers, only: [:create, :destroy]
-    # resources :claims
+    resources :claims, only: [:create, :destroy]
   end
 
   devise_for :users, controllers: {

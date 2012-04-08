@@ -2,9 +2,12 @@
 <h1><%= @book.title %></h1>
 
 <% if signed_in? %>
-  <%= link_to "Offer this book" %>
+  <%= button_to "Offer this book", user_offers_path(user_id: current_user.id,
+                                                    book_id: @book.id) %>
+
   <% if @book.available? %>
-    <%= link_to "Claim this book" %>
+    <%= button_to "Claim this book", user_claims_path(user_id: current_user.id,
+                                                      book_id: @book.id) %>
   <% end %>
 <% end %>
 

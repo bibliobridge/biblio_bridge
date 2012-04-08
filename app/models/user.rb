@@ -2,6 +2,7 @@ class User
   include Mongoid::Document
 
   has_many :offers
+  has_many :claims
 
   # Include default devise modules. Others available are:
   # :token_authenticatable, :encryptable, :confirmable, :lockable, :timeoutable and :omniauthable
@@ -22,6 +23,11 @@ class User
 
   def has_mobile_number?
     !mobile_number.blank?
+  end
+
+  def claim offer
+    claim = claims.create offer: offer
+    Notification.new(claim).send!
   end
 
   def self.find_or_create_from_facebook auth_hash
