@@ -26,6 +26,10 @@ class User
     !mobile_number.blank?
   end
 
+  def first_name
+    facebook_info['info']['first_name']
+  end
+
   def claim offer
     claim = claims.create offer: offer
     Notification.new(claim).send!
