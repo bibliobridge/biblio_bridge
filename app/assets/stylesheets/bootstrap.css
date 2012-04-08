@@ -3987,9 +3987,6 @@ h1.title {
 	float: left;
 }
 
-.container.2 {
- width: auto;
-}
 
 .hero-unit.top {
  margin: 0px;
@@ -4026,10 +4023,6 @@ ol.menu {
 
 ol.li.menu {
 	background: white;
-}
-
-.container.fluid.2 {
- padding-left: 0px;
 }
 
 .hero-unit.middle {

@@ -16,7 +16,7 @@
 			 <div class="search">
         <%= form_tag(books_path, method: "get") do %>
            <%= label_tag :title, "Search for your book", :class => 'searchtitle' %>
-           <%= text_field_tag(:title) %>
+           <%= text_field_tag :title %>
            <%= submit_tag "search", :class => 'search' %>
          <% end %>
 			 </div>
