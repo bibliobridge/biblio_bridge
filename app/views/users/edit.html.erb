@@ -2,8 +2,8 @@
 
 <p> Please enter your mobile number</p>
 
-<%= bootstrap_form_for @user do %>
-  <%= label_tag :mobile_number, "Your 10-digit mobile number" %>
-  <%= text_field_tag :mobile_number, maxlength: 10 %>
+<%= bootstrap_form_for @user do |f| %>
+  <%= f.label :mobile_number, "Your 10-digit mobile number" %>
+  <%= f.text_field :mobile_number, "", size: 10 %>
   <%= label_tag :mobile_number, "4085551212" %>
 <% end %>
