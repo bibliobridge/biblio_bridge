@@ -3,13 +3,20 @@ require "./lib/string_tokenizer"
 describe StringTokenizer do
   let(:string_of_words) { "The rain in Spain falls mainly on the plain." }
   let(:string_with_tabs_and_newlines) { "This\nstring   \tugly whitespace" }
-  let(:subject) { StringTokenizer.new string_of_words }
+  let(:title) { "A Book on Algorithms" }
+  let(:string_with_stray_characters) { "This Book.title _has weird chars*" }
+  subject { StringTokenizer.new string_of_words }
 
   describe "#as_tokens" do
     it "removes spaces from tokens" do
-
       subject.as_tokens.each do |t|
         t.should_not =~ / /
+      end
+    end
+
+    it "turns any non alphanumeric characters into whitespace" do
+      StringTokenizer.new(string_with_stray_characters).as_tokens.each do |t|
+        t.should_not =~ /\W/
       end
     end
 
@@ -31,6 +38,10 @@ describe StringTokenizer do
           StringTokenizer::STOPWORDS.should_not include t
         end
       end
+
+      it "ignores case of stopwords" do
+
+      end
     end
 
     describe "#as_keywords" do
@@ -44,7 +55,12 @@ describe StringTokenizer do
         keywords = subject.as_keywords
         keywords.should == keywords.uniq
       end
+
+      it "removes stopwords" do
+        StringTokenizer.new(title).as_keywords.should == ["book", "algorithms"]
+      end
     end
   end
 end
+
 
