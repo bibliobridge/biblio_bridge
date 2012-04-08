@@ -13,7 +13,7 @@ module SendHub
   def self.create_contact name, number
     r = Faraday.post "https://api.sendhub.com/v1/contacts/?username=#{SendHub::USERNAME}&api_key=#{SendHub::APIKEY}",
       Yajl::Encoder.encode(name: name, number: number), 'Content-Type' => 'application/json'
-    Yalj::Parser.parse r.body
+    Yajl::Parser.parse r.body
   end
 
   def self.send contact_id, message
