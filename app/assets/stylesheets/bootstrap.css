@@ -4109,6 +4109,13 @@ img.books {
 	clear: both;
 }
 
+.hero-unit.fix {
+	padding-bottom: 25px;
+	border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+}
+
 
 
 
