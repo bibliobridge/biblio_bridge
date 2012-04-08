@@ -1,0 +1,10 @@
+
+<h1><%= @book.title %></h1>
+
+<% if signed_in? %>
+  <%= link_to "Offer this book" %>
+  <% if @book.available? %>
+    <%= link_to "Claim this book" %>
+  <% end %>
+<% end %>
+

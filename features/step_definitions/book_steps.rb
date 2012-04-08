@@ -16,7 +16,6 @@ When /^I view the book$/ do
 end
 
 When /^I claim the book$/ do
-  click_on "Claim"
+  click_on "Claim this book"
 end
-
 

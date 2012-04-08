@@ -10,5 +10,4 @@ Feature: Claim a book
 		When I view the book
 		And I claim the book
 		Then I should get a notification
-		
 

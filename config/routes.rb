@@ -1,11 +1,18 @@
 Heorot::Application.routes.draw do
 
+  get "offers/create"
+
+  get "offers/destroy"
+
   get "users/edit"
 
   get "users/update"
 
   resources :books
-  resources :users, only: [:edit, :update]
+  resources :users, only: [:edit, :update] do
+    resources :offers, only: [:create, :destroy]
+    # resources :claims
+  end
 
   devise_for :users, controllers: {
     omniauth_callbacks: "users/omniauth_callbacks"

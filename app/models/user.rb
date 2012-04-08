@@ -1,5 +1,8 @@
 class User
   include Mongoid::Document
+
+  has_many :offers
+
   # Include default devise modules. Others available are:
   # :token_authenticatable, :encryptable, :confirmable, :lockable, :timeoutable and :omniauthable
   devise :omniauthable, :trackable
@@ -31,3 +34,4 @@ class User
     end
   end
 end
+
