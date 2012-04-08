@@ -1,2 +1,7 @@
-<h1>Users#edit</h1>
-<p>Find me in app/views/users/edit.html.erb</p>
+<h1>Update your mobile number</h1>
+
+<%= bootstrap_form_for @user do %>
+  <%= label_tag :mobile_number, "Your 10-digit mobile number" %>
+  <%= text_field_tag :mobile_number, maxlength: 10 %>
+  <%= label_tag :mobile_number, "4085551212" %>
+<% end %>
