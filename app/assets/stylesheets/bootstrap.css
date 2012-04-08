@@ -3995,9 +3995,12 @@ h1.title {
  margin: 0px;
  padding-bottom: 0px;
  margin-bottom: 0px;
-	border-radius: 0px;
-	-webkit-border-radius: 0px;
-	-moz-border-radius: 0px;
+ border-radius: 0px;
+ -webkit-box-shadow: 0 5px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+ -moz-box-shadow: 0 5px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+ box-shadow: 0 5px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+ border-bottom: 5px solid #2E0854;
+
 }
 
 .hero-unit.top2 {
@@ -4052,7 +4055,25 @@ body {
 	background: gray;
 }
 
+h1{
+ font-family:'DINBold',Arial,sans-serif;
+	font-size:36px;
+	font-weight:normal;
+	line-height:36px;
+	color:#5f5358;
+}
 
+input#title {
+	padding: 15px 100px 15px 100px;
+	border-radius: 8px;
+	box-shadow: 5px 5px 5px;
+	font-size: 30px;
+
+}
+
+input.search {
+	padding: 15px 100px 15px 100px;
+}
 
 
 
