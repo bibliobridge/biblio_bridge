@@ -4034,9 +4034,10 @@ ol.li.menu {
 }
 
 h1.tag {
-	text-align: center;
+	text-align: left;
 	padding-top: 50px;
 	padding-bottom: 10px;
+	font-size: 40px;
 }
 
 li.topnav {
@@ -4080,12 +4081,33 @@ input.search:hover {
 }
 
 label.searchtitle {
-	font-size: 40px;
+	font-size: 30px;
 	padding-bottom: 25px;
 }
 
+.left1 {
+ float: left;
+ width: 200px;
+ height: 200px;
+ padding-top: 50px;
+ padding-bottom: 10px;
+}
 
+.right1 {
+ margin-left: 200px;
+ float: left;
+ width: 530px;
+}
 
+img.books {
+	margin-left: 70px;
+	width: 250px;
+	height: 205px;
+}
+
+.clearfix2 {
+	clear: both;
+}
 
 
 
