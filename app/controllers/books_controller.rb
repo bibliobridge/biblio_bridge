@@ -1,7 +1,9 @@
 class BooksController < ApplicationController
   def index
     if params[:title]
-      @books = Book.where(title: params[:title]).all
+      @books = Book.search_by_title params[:title]
+    else
+      @books = Book.all
     end
   end
 end

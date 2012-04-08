@@ -1,5 +1,5 @@
 Given /^a book is in the library$/ do
-  @book = Book.new title: "Code Simplicity"
+  @book = Book.create title: "Code Simplicity"
 end
 
 Then /^I should see the book$/ do

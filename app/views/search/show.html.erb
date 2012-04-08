@@ -12,9 +12,9 @@
 <div class="hero-unit middle">
    <div class="container">
      <div class="hero-unit top3">
-       <%= form_tag("/search", method: "post") do %>
-           <%= label_tag(:q, "Book Search:") %>
-           <%= text_field_tag(:q) %>
+       <%= form_tag(books_path, method: "get") do %>
+           <%= label_tag(:title, "Book Search:") %>
+           <%= text_field_tag(:title) %>
            <%= submit_tag("search") %>
          <% end %>
      </div>
