@@ -25,7 +25,7 @@ Call or text them at #{@taker.mobile_number}
   end
 
   def tell_taker_giver_will_contact
-    Sendhub.send @taker.sendhub_contact_id, <<-TXT
+    SendHub.send @taker.sendhub_contact_id, <<-TXT
 Hey! #{@giver.first_name} has a copy of #{@book.title}! They have your
 number and should call soon!
     TXT
