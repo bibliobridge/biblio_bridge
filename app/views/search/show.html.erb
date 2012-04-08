@@ -11,6 +11,13 @@
 
 	<div class="right1">
   <h1 class="tag">Find the books you need from other Students.  Save Your money for Keggers.  </h1>
+
+		 <%= form_tag(books_path, method: "get") do %>
+		   <%= label_tag :title, "", :class => 'searchtitle' %>
+		   <%= text_field_tag :title %>
+		   <%= submit_tag "search", :class => 'search' %>
+		   <% end %>
+
 	</div>
 
   </div>
@@ -26,22 +33,6 @@
    <div class="container">
      <div class="hero-unit top3">
 
-       <div class="search">
-        <%= form_tag(books_path, method: "get") do %>
-           <%= label_tag :title, "Search for your book", :class => 'searchtitle' %>
-           <%= text_field_tag :title %>
-           <%= submit_tag "search", :class => 'search' %>
-         <% end %>
-       </div>
-
      </div>
    </div>
-</div>
-
-<div class="hero-unit top">
-  <div class="container">
-   <div class="hero-unit top2">
-
-   </div>
- </div>
 </div>
