@@ -5,7 +5,7 @@ Heorot::Application.routes.draw do
   get "users/update"
 
   resources :books
-  resources :user, only: [:edit, :update]
+  resources :users, only: [:edit, :update]
 
   devise_for :users, controllers: {
     omniauth_callbacks: "users/omniauth_callbacks"

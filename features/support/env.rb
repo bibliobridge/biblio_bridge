@@ -5,6 +5,10 @@
 # files.
 
 require 'cucumber/rails'
+require_relative "fb_auth_hash"
+require_relative "hooks"
+OmniAuth.config.test_mode = true
+OmniAuth.config.add_mock :facebook, FACEBOOK_AUTH_HASH
 
 # Capybara defaults to XPath selectors rather than Webrat's default of CSS3. In
 # order to ease the transition to Capybara we set the default here. If you'd
