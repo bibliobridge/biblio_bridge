@@ -1,4 +1,4 @@
-Heorot::Application.routes.draw do
+BiblioBridge::Application.routes.draw do
 
   get "offers/create"
 

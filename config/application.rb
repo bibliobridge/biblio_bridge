@@ -15,7 +15,7 @@ if defined?(Bundler)
   # Bundler.require(:default, :assets, Rails.env)
 end
 
-module Heorot
+module BiblioBridge
   class Application < Rails::Application
 
     config.generators do |g|

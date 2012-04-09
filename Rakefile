@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Heorot::Application.load_tasks
+BiblioBridge::Application.load_tasks
