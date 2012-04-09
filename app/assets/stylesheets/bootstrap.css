@@ -4032,6 +4032,7 @@ ol.li.menu {
 	-webkit-border-radius: 0px;
 	-moz-border-radius: 0px;
 	margin-bottom: 0px;
+	padding-top: 0px;
 }
 
 h1.tag {
@@ -4117,7 +4118,25 @@ img.books {
 	-webkit-border-radius: 0px;
 }
 
+.left2 {
+ float: left;
+ width: 690px;
+ height: 200px;
+ padding-top: 50px;
+ padding-bottom: 10px;
+}
 
+.right2 {
+ float: left;
+ width: 200px;
+ height: 200px;
+ padding-top: 50px;
+ padding-bottom: 10px;
+}
+
+img.cell {
+	margin-left: 50px;
+}
 
 
 
