@@ -5,20 +5,20 @@
   <div class="container">
    <div class="hero-unit top2">
 
-	<div class="left1">
-	 <%= image_tag "books.png", :class => 'books' %>
-	</div>
+  <div class="left1">
+   <%= image_tag "books.png", :class => 'books' %>
+  </div>
 
-	<div class="right1">
+  <div class="right1">
   <h1 class="tag">Find the books you need from other Students.  Save Your money for Keggers.  </h1>
 
-		 <%= form_tag(books_path, method: "get") do %>
-		   <%= label_tag :title, "", :class => 'searchtitle' %>
-		   <%= text_field_tag :title %>
-		   <%= submit_tag "search", :class => 'search' %>
-		   <% end %>
+     <%= form_tag(books_path, method: "get") do %>
+       <%= label_tag :title, "", :class => 'searchtitle' %>
+       <%= text_field_tag :title %>
+       <%= submit_tag "search", :class => 'search' %>
+       <% end %>
 
-	  </div>
+    </div>
 
     </div>
    </div>
@@ -33,13 +33,13 @@
    <div class="container">
      <div class="hero-unit top3">
 
-			 <div class="left2">
-				 <h1 class="tag">Get instant updates to your phone from other students.   </h1>
-			 	</div>
+       <div class="left2">
+         <h1 class="tag">Get instant updates to your phone from other students.   </h1>
+        </div>
 
-			 <div class="right2">
-				 <%= image_tag "cell.png", :class => 'cell' %>
-			 	</div>
+       <div class="right2">
+         <%= image_tag "cell.png", :class => 'cell' %>
+        </div>
 
      </div>
    </div>
